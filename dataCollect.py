@@ -1,5 +1,3 @@
-
-
 import csv
 import pandas
 import os
@@ -28,26 +26,12 @@ def extractData(eachPath):
             rowDataList.append(df.iloc[i,j])
 #print(rowDataList)
     writer.writerow(rowDataList)
-
-
-
-
-
-
-
-
-
+  
 def collectData ():
     
     for year in range (0 , len(allData)) :
         #print(allDataPath+"/"+allData[year])
         extractData( allDataPath+"/"+allData[year])
-
-
-
-
-
-
 
 collectData()
 f.close()
